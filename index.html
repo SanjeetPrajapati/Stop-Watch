@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Stop watch by <i>SANJEET</i></h1>
+<button id="mode"  onclick="Dark()" >Mode</button>
     <div id="time">
         <span id="min">00</span>
         <span>:</span>
         <span id="sec">00</span>
         <span>:</span>
         <span id="ms">00</span>
-    </div>
+    </div><br>
     <button onclick="Start()" id="Start">Start</button>
     <button onclick="Stop()" id="Stop">Stop</button>
     <button onclick="Reset()" id="Reset">Reset</button>

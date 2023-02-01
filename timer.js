@@ -1,7 +1,7 @@
 console.log("SANJEET")
 let intervalId;
 function Start() {
-var Inter;
+    var Inter;
     let ms = eval(document.getElementById("ms").innerHTML);
     let sec = eval(document.getElementById("sec").innerHTML);
     let min = eval(document.getElementById("min").innerHTML);
@@ -42,7 +42,7 @@ var Inter;
     // clearInterval(Inter);
     // Inter = setInterval(Start, 10);
     // Inter = setInterval(Start, 10);
-    intervalId = setTimeout(Start, 10);
+    intervalId = setTimeout(Start, 100);
 
     // setTimeout(Start,10)
     // Stop() 
@@ -56,7 +56,7 @@ function Stop() {
 
 
 }
-function Reset(){
+function Reset() {
     clearTimeout(intervalId);
     // ms=00;
     document.getElementById("ms").innerHTML = "00";
@@ -65,4 +65,19 @@ function Reset(){
     document.getElementById("min").innerHTML = "00";
     // min=00;
     console.log("reset button")
+}
+function Dark() {
+    if (document.body.style.backgroundColor=="rgb(138, 241, 241)" ) {
+        
+        document.body.style.color = "white";
+
+        document.body.style.backgroundColor="black" ;
+    }
+    else{
+        document.body.style.backgroundColor="rgb(138, 241, 241)" ;
+        document.body.style.color = "black";
+    }
+
+
+
 }
